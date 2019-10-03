@@ -1,0 +1,48 @@
+.teamContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.teamMemberCard {
+    display: flex;
+    width: 18%;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.teamMemberPic {
+    width: 100%;
+}
+
+.teamMemberContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.teamMemberName {
+    color: #1C3956;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.teamMemberAge {
+    color: #AF8F61;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.teamMemberNetwork {
+    color: #1C3956;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.teamMemberNetwork:hover {
+    color: #AF8F61;
+}

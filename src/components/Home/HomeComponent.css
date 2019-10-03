@@ -1,0 +1,63 @@
+.homeContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeTitleContainer {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.homeTitle {
+    font-family: 'Poppins', sans-serif;
+    color: #1C3956;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.catchingSentence {
+    color: #AF8F61;
+    font-size: 30px;
+}
+
+.homeIntroContainer {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.introContainer {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeIntroImage {
+    display: flex;
+    width: 100%;
+}
+
+.homeIntroTitle {
+    margin-top: 10px;
+    color: #AF8F61;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.homeIntroContent {
+    margin-top: 10px;
+    color: #1C3956;
+    font-size: 15px;
+}
+
+.homeIntroImp {
+    color: #AF8F61;
+    font-weight: bold;
+}
