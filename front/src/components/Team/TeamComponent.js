@@ -141,7 +141,7 @@ class TeamComponent extends Component {
         {
             alt: 'CChaptal',
             name: 'Clément Chaptal',
-            birthDate: '1999-12-26',
+            birthDate: '1999-02-11',
             pic: Chaptal,
             networks: [
                 {

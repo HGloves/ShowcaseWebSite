@@ -9,7 +9,6 @@ class ContactComponent extends Component {
     render() {
         return (
             <div className="">
-                Contact
             </div>
         )
     }
