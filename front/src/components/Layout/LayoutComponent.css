@@ -23,7 +23,7 @@
     display: flex;
     width: 100%;
     height: 80%;
-    margin-top: 100%;
+    margin-top: 55%;
     flex-direction: column;
     align-items: center;
 }
@@ -78,11 +78,14 @@
     font-size: 25px;
 }
 
-.navlink {
+.layoutNavlink {
+    display: flex;
     text-decoration: none;
     color: #F4F4F4;
+    flex-direction: column;
+    align-items: center;
 }
 
-.tabContainer:hover .navlink {
+.tabContainer:hover .layoutNavlink {
     color: #AF8F61;
 }

@@ -20,25 +20,42 @@ class LayoutComponent extends Component {
                 </span>
                 <div className="tabListContainer">
                     <div className="tabContainer">
+                    <NavLink className='layoutNavlink' to='/about'>
                         <div className="tabBorder">
                         </div>
-                        <NavLink className='navlink' to='/about'>A PROPOS</NavLink>
+                        A PROPOS
                         <div className="tabBorder">
                         </div>
+                    </NavLink>
                     </div>
                     <div className="tabContainer">
+                    <NavLink className='layoutNavlink' to='/team'>
                         <div className="tabBorder">
                         </div>
-                        <NavLink className='navlink' to='/team'>L'EQUIPE</NavLink>
+                        L'EQUIPE
                         <div className="tabBorder">
                         </div>
+                    </NavLink>
                     </div>
                     <div className="tabContainer">
+                    <NavLink className='layoutNavlink' to='/contact'>
                         <div className="tabBorder">
                         </div>
-                        <NavLink className='navlink' to='/contact'>CONTACT</NavLink>
+                        <span>NOUS</span>
+                        <span>CONTACTER</span>
                         <div className="tabBorder">
                         </div>
+                    </NavLink>
+                    </div>
+                    <div className="tabContainer">
+                    <NavLink className='layoutNavlink' to='/findUs'>
+                        <div className="tabBorder">
+                        </div>
+                        <span>NOUS</span>
+                        <span>TROUVER</span>
+                        <div className="tabBorder">
+                        </div>
+                    </NavLink>
                     </div>
                 </div>
                 <div className="socialNetworkContainer">

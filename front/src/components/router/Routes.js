@@ -1,6 +1,7 @@
 import HomeComponent from '../Home/HomeComponent';
 import TeamComponent from '../Team/TeamComponent';
 import ContactComponent from '../Contact/ContactComponent';
+import FindUsComponent from '../FindUs/FindUsComponent';
 
 const routes = [
     {
@@ -16,6 +17,11 @@ const routes = [
     {
         path: '/contact',
         component: ContactComponent,
+        children: []
+    },
+    {
+        path: '/findUs',
+        component: FindUsComponent,
         children: []
     },
     {

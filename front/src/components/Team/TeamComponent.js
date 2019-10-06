@@ -36,6 +36,10 @@ class TeamComponent extends Component {
                 {
                     type: 'facebook',
                     link: 'https://www.facebook.com/profile.php?id=100009867942790'
+                },
+                {
+                    type: 'github',
+                    link: 'https://github.com/Skyrize'
                 }
             ]
         },
@@ -52,6 +56,10 @@ class TeamComponent extends Component {
                 {
                     type: 'facebook',
                     link: 'https://www.facebook.com/camille.monjo'
+                },
+                {
+                    type: 'github',
+                    link: 'https://github.com/CMonjo'
                 },
                 {
                     type: 'instagram',
@@ -71,6 +79,10 @@ class TeamComponent extends Component {
                 {
                     type: 'facebook',
                     link: 'https://www.facebook.com/nicolas.albiges'
+                },
+                {
+                    type: 'github',
+                    link: 'https://github.com/NicolasAlbiges'
                 }
             ]
         },
@@ -87,6 +99,10 @@ class TeamComponent extends Component {
                 {
                     type: 'facebook',
                     link: 'https://www.facebook.com/antoine.laget'
+                },
+                {
+                    type: 'github',
+                    link: 'https://github.com/antoine0112'
                 }
             ]
         },
@@ -103,6 +119,10 @@ class TeamComponent extends Component {
                 {
                     type: 'facebook',
                     link: 'https://www.facebook.com/batyste.cayrier'
+                },
+                {
+                    type: 'github',
+                    link: 'https://github.com/BaptisteCayrier'
                 }
             ]
         },
@@ -135,6 +155,10 @@ class TeamComponent extends Component {
                 {
                     type: 'facebook',
                     link: 'https://www.facebook.com/toad.bill?ref=br_rs'
+                },
+                {
+                    type: 'github',
+                    link: 'https://github.com/DorianEpitech'
                 }
             ]
         },
@@ -151,6 +175,10 @@ class TeamComponent extends Component {
                 {
                     type: 'facebook',
                     link: 'https://www.facebook.com/profile.php?id=100006788836075'
+                },
+                {
+                    type: 'github',
+                    link: 'https://github.com/ClementChaptal'
                 }
             ]
         },
@@ -167,6 +195,10 @@ class TeamComponent extends Component {
                 {
                     type: 'facebook',
                     link: 'https://www.facebook.com/hugo.codinach.3'
+                },
+                {
+                    type: 'github',
+                    link: 'https://github.com/hugocodinach'
                 }
             ]
         },

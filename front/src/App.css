@@ -1,21 +1,18 @@
-/* .app {
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    background-color: #F4F4F4;
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
 }
 
-.layout {
-    display: flex;
-    width: 15%;
-    height: 100%;
-    min-height: 100vh;
-    background-color: #1C3956;
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #AF8F61; 
 }
 
-.content {
-    display: flex;
-    width: 85%;
-    height: 100%;
-} */
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7e6236; 
+}
