@@ -9,8 +9,10 @@
     "draft-js-export-html": "^1.4.1",
     "draft-js-plugins-editor": "^3.0.0",
     "draft-js-static-toolbar-plugin": "^3.0.1",
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1",
+    "leaflet": "^1.5.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-leaflet": "^2.4.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.2"
   },
