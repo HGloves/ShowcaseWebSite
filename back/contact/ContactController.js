@@ -16,7 +16,7 @@ router.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'ftcfirtreecorp@gmail.com',
+        user: 'hgloves.ftc@gmail.com',
         pass: 'hytVND25'
     }
 });

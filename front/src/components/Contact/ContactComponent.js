@@ -81,7 +81,7 @@ class ContactComponent extends Component {
         this.setState({ loading: true });
         ContactService.sendMail({
             from: emailAdress,
-            to: 'ftcfirtreecorp@gmail.com',
+            to: 'hgloves.ftc@gmail.com',
             subject: mailObject + " - " + emailAdress,
             html: this.editor.editor.innerHTML
         })
@@ -171,7 +171,7 @@ class ContactComponent extends Component {
         return (
             <div className="contactContainer">
                 <div className="contactHeaderTF">
-                    <TextField required label="Destinataire" value='ftcfirtreecorp@gmail.com' disabled fullWidth/>
+                    <TextField required label="Destinataire" value='hgloves.ftc@gmail.com' disabled fullWidth/>
                 </div>
                 <div className="contactHeaderTF">
                     <TextField required label="Votre Email" value={emailAdress} onChange={this.handleemailAdress} fullWidth/>
