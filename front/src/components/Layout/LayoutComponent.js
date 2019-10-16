@@ -9,15 +9,14 @@ import { Icon, Button } from 'antd';
 import { NavLink } from 'react-router-dom';
 
 import history from '../../utils/history';
+import LOGO from '../../ressources/images/logo.png';
 
 class LayoutComponent extends Component {
 
     render() {
         return (
             <div className="layoutContainer">
-                <span className="title">
-                    HGloves
-                </span>
+                <img alt='logo' src={LOGO} className="title" />
                 <div className="tabListContainer">
                     <div className="tabContainer">
                     <NavLink className='layoutNavlink' to='/about'>

@@ -23,7 +23,7 @@
     display: flex;
     width: 100%;
     height: 80%;
-    margin-top: 55%;
+    margin-top: 45%;
     flex-direction: column;
     align-items: center;
 }
@@ -63,7 +63,7 @@
 .socialNetworkContainer {
     display: flex;
     width: 100%;
-    margin-top: 90%;
+    margin-top: 50%;
     justify-content: space-evenly;
 }
 
