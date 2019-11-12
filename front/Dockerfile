@@ -14,6 +14,6 @@ RUN yarn install
 
 RUN yarn build
 
-EXPOSE 4000
+EXPOSE 80
 
-CMD [ "serve", "-s", "build", "-l", "4000"]
+CMD [ "serve", "-s", "build", "-l", "80"]
