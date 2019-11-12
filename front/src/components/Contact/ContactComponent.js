@@ -1,7 +1,6 @@
 //Imports
 import React, { Component } from 'react'
 import {Editor, EditorState, RichUtils} from 'draft-js';
-import {stateToHTML} from 'draft-js-export-html';
 
 //Antd
 import {Icon} from 'antd';
@@ -18,7 +17,6 @@ import "./ContactComponent.css";
 //Services
 import ContactService from '../../services/contactService'
 import { Snackbar } from '@material-ui/core';
-import { red } from '@material-ui/core/colors';
 
 class ContactComponent extends Component {
 
@@ -76,7 +74,7 @@ class ContactComponent extends Component {
     }
 
     sendMail = () => {
-        const { mailObject, emailAdress, snackbarParam, loading } = this.state;
+        const { mailObject, emailAdress, snackbarParam } = this.state;
 
         this.setState({ loading: true });
         ContactService.sendMail({
@@ -109,8 +107,6 @@ class ContactComponent extends Component {
     };
 
     editSnackbar = newSnackbar => {
-        const { snackbarParam } = this.state;
-
         this.setState({
             snackbarParam: {...newSnackbar}
         });
@@ -142,13 +138,13 @@ class ContactComponent extends Component {
     isMailObjectValid = () => {
         const { mailObject } = this.state;
 
-        return mailObject.trim() != '';
+        return mailObject.trim() !== '';
     }
 
     isMailContentValid = () => {
         const content = this.editor.editor.innerText;
 
-        return content.trim() != '';
+        return content.trim() !== '';
     }
 
     isMailFormValid = () => {
@@ -200,7 +196,7 @@ class ContactComponent extends Component {
                     </Button>
                 </div>
                 <Snackbar
-                    anchorOrigin={ snackbarParam.vertical, Snackbar.horizontal }
+                    anchorOrigin={snackbarParam.vertical, Snackbar.horizontal}
                     open={snackbarParam.open}
                     onClose={this.closeSnackbar}
                     message={

@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react'
+import React, { Component } from 'react'
 import MapGL, { GeolocateControl, Marker, Popup } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css"

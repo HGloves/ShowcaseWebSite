@@ -5,10 +5,9 @@ import React, { Component } from 'react'
 import './LayoutComponent.css';
 
 //Antd
-import { Icon, Button } from 'antd';
+import { Icon } from 'antd';
 import { NavLink } from 'react-router-dom';
 
-import history from '../../utils/history';
 import LOGO from '../../ressources/images/logo.png';
 
 class LayoutComponent extends Component {
