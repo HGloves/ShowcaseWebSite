@@ -1,0 +1,44 @@
+.AppBarComponentContainer {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.AppBarLogoContainer {
+    width: 20%;
+    height: 100%;
+}
+
+.AppBarLogo {
+    width: 40%;
+    margin-left: 6%;
+}
+
+.AppBarTabContainer {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.AppBarContactContainer {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.appBarTabDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AppBarTab {
+    cursor: pointer;
+}

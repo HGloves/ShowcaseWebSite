@@ -1,0 +1,52 @@
+.ProblematicComponentContainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+.ProblematicTitleContainer {
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 15%;
+}
+
+.ProblematicContentContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 85%;
+}
+
+.ProblematicSideContainer {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+
+}
+
+.ProblematicImageContainer {
+    display: flex;
+    width: 40%;
+    height: 90%;
+    border-radius: 40px;
+    margin-left: 40%;
+    background-image: url('../../ressources/dot/problematic.png');
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.ProblematicTextContainer {
+    display: flex;
+    width: 70%;
+    height: 90%;
+    margin-right: 10%;
+    flex-direction: column;
+    justify-content: center;
+}
