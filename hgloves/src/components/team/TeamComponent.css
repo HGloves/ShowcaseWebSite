@@ -1,0 +1,60 @@
+.TeamComponentContainer {
+    display: flex;
+    width: 88%;
+    padding-left: 6%;
+    padding-right: 6%;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+.TeamCarouselCardContainer {
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.SolutionComponentHand {
+    position: absolute;
+    bottom: 0px;
+    left: -200px;
+}
+
+.TeamCarouselImageContainer {
+    display: flex;
+    width: 48%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.TeamCarouselImage {
+    display: flex;
+    height: 100%;
+}
+
+.TeamCarouselContentContainer {
+    display: flex;
+    width: 48%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TeamCarouselSocialNetworkContainer {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15%;
+}
+
+.TeamCarouselSocialNetwork {
+    width: 10%;
+    cursor: pointer;
+}

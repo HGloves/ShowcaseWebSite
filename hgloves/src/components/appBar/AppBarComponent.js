@@ -14,10 +14,10 @@ class AppBarComponent extends Component {
         tabs: [
             { name: 'HGloves', id: 'hgloves', current: true },
             { name: 'Problématique', id: 'problematic', current: false },
-            { name: 'Solution', id: 'problematic', current: false },
-            { name: 'L\'équipe', id: 'problematic', current: false },
-            { name: 'Acteurs', id: 'problematic', current: false },
-            { name: 'Contact', id: 'problematic', current: false },
+            { name: 'Solution', id: 'solution', current: false },
+            { name: 'L\'équipe', id: 'team', current: false },
+            { name: 'Acteurs', id: 'team', current: false },
+            { name: 'Contact', id: 'team', current: false },
         ]
     }
 
@@ -50,7 +50,7 @@ class AppBarComponent extends Component {
                 <div className='AppBarTabContainer'>
                     {tabs.map((tab, key) => {
                         return (
-                            <div className='appBarTabDiv'>
+                            <div key={key} className='appBarTabDiv'>
                                 <Typography
                                     className='AppBarTab'
                                     key={key}

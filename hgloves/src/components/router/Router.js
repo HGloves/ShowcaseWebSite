@@ -6,6 +6,8 @@ import { Route } from 'react-router-dom';
 import AppBarComponent from '../appBar/AppBarComponent';
 import HGlovesComponent from '../hgloves/HGlovesComponent';
 import ProblematicComponent from '../problematic/ProblematicComponent';
+import SolutionComponent from '../solution/SolutionComponent';
+import TeamComponent from '../team/TeamComponent';
 
 import './Router.css'
 
@@ -18,6 +20,8 @@ class Router extends Component {
                 <div className='RouterContentContainer'>
                     <HGlovesComponent/>
                     <ProblematicComponent/>
+                    <SolutionComponent/>
+                    <TeamComponent/>
                 </div>
             </div>
         );
