@@ -4,7 +4,6 @@ import Typography from '@material-ui/core/Typography';
 
 //Style
 import './SolutionComponent.css'
-import { Icon } from '@material-ui/core';
 
 //Images
 import HAND from '../../ressources/logo/hand.png';

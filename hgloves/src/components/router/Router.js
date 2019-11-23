@@ -1,6 +1,5 @@
 //Imports
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
 
 //Components
 import AppBarComponent from '../appBar/AppBarComponent';

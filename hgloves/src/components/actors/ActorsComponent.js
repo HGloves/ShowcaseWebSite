@@ -6,7 +6,7 @@ import Actors from './Actors';
 
 //Style
 import './ActorsComponent.css'
-import { Icon, IconButton, Tooltip, Zoom } from '@material-ui/core';
+import { Icon, Tooltip, Zoom } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 
 class ActorsComponent extends Component {
@@ -27,7 +27,6 @@ class ActorsComponent extends Component {
                                 </div>
                                 <HtmlTooltip TransitionComponent={Zoom}
                                     placement="top"
-                                    arrow
                                     title={
                                         <React.Fragment>
                                             <Typography color="primary" variant='h6' style={{ fontWeight: 'bold' }}>{actor.name}</Typography>

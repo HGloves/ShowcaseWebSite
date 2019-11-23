@@ -31,7 +31,7 @@ class AppBarComponent extends Component {
 
         let tmp = [...tabs];
 
-        for (let i = 0; i != tmp.length; i += 1)
+        for (let i = 0; i !== tmp.length; i += 1)
             tmp[i].current = false;
         tmp[key].current = true;
         this.setState({
