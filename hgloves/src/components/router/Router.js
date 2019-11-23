@@ -8,6 +8,7 @@ import HGlovesComponent from '../hgloves/HGlovesComponent';
 import ProblematicComponent from '../problematic/ProblematicComponent';
 import SolutionComponent from '../solution/SolutionComponent';
 import TeamComponent from '../team/TeamComponent';
+import ActorsComponent from '../actors/ActorsComponent';
 
 import './Router.css'
 
@@ -22,6 +23,7 @@ class Router extends Component {
                     <ProblematicComponent/>
                     <SolutionComponent/>
                     <TeamComponent/>
+                    <ActorsComponent/>
                 </div>
             </div>
         );

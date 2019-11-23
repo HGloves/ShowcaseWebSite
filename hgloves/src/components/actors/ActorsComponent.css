@@ -1,0 +1,86 @@
+.ActorsComponentContainer {
+    display: flex;
+    width: 100%;
+    height: 120vh;
+    padding-top: 100px;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+}
+
+.ActorsComponentBegin {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    transform: rotate(-2deg);
+    top: 15px;
+}
+
+.ActorsComponentEnd {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    transform: rotate(-2deg);
+    bottom: -30px;
+}
+
+.ActorsComponentLeft {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    left: 0px;
+}
+
+.ActorsComponentContentContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(240, 242, 255);
+    background-color: rgb(248, 239, 226); */
+    /* background-image: linear-gradient(to left bottom, #f0f2ff, #faeffa, #ffedf1, #ffede7, #f8efe2); */
+    background-image: linear-gradient(to right, #f0f2ff, #faeffa, #ffedf1, #ffede7, #f8efe2);
+    flex-direction: row;
+    padding-top: 10%;
+}
+
+.ActorsComponentCardContainer {
+    display: flex;
+    width: 20%;
+    height: 50%;
+    min-width: 344px;
+    min-height: 475px;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 10%;
+    z-index: 1;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    border-top: solid 10px #1C3956;
+    position: relative;
+}
+
+.ActorsComponentCardContent {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.ActorsComponentCardButton {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: -0.9vw;
+    cursor: pointer;
+}
