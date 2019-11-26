@@ -29,14 +29,6 @@ class AppBarComponent extends Component {
             block: 'start',
         });
 
-        console.log(document.getElementById('scrollDiv').scrollTop);
-        console.log(document.getElementById('hgloves').offsetTop);
-        console.log(document.getElementById('problematic').offsetTop);
-        console.log(document.getElementById('solution').offsetTop);
-        console.log(document.getElementById('team').offsetTop);
-        console.log(document.getElementById('actors').offsetTop);
-        console.log(document.getElementById('hgloves').offsetTop);
-
         let tmp = [...tabs];
 
         for (let i = 0; i !== tmp.length; i += 1)

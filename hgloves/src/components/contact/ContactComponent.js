@@ -1,14 +1,12 @@
 //Imports
 import React, { Component } from 'react';
 import Typography from '@material-ui/core/Typography';
-import ItemsCarousel from 'react-items-carousel';
 
 import BG from '../../ressources/logo/socialNetwork.jpg';
 import DOTS from '../../ressources/dot/cross.png';
 
 //Style
 import './ContactComponent.css'
-import { Icon } from '@material-ui/core';
 
 import FACEBOOK from '../../ressources/logo/facebookOutlined.png';
 import TWITTER from '../../ressources/logo/twitterOutlined.png';

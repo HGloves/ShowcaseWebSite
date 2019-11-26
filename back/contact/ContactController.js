@@ -24,7 +24,6 @@ const transporter = nodemailer.createTransport({
 
 router.post('/contact/mail/', function (req, res) {
 
-    console.log(req.body);
     if (!req.body || !req.body.from || !req.body.to || !req.body.subject || !req.body.html)
         return;
     
