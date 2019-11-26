@@ -47,3 +47,20 @@
     bottom: 0;
     right: 0;
 }
+
+@media screen and (max-width: 1200px) {
+    .HGlovesContentContainer {
+        flex-direction: column
+    }
+    .HGlovesTextContainer {
+        width: 100%;
+        padding: 0%;
+    }
+    .HGlovesImageContainer {
+        width: 100%;
+    }
+    .HGlovesImage {
+        top: 0;
+        z-index: 1;
+    }
+}

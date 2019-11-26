@@ -8,6 +8,7 @@ import ProblematicComponent from '../problematic/ProblematicComponent';
 import SolutionComponent from '../solution/SolutionComponent';
 import TeamComponent from '../team/TeamComponent';
 import ActorsComponent from '../actors/ActorsComponent';
+import ContactComponent from '../contact/ContactComponent';
 
 import './Router.css'
 
@@ -23,6 +24,7 @@ class Router extends Component {
                     <SolutionComponent/>
                     <TeamComponent/>
                     <ActorsComponent/>
+                    <ContactComponent/>
                 </div>
             </div>
         );

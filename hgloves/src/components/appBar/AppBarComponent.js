@@ -17,7 +17,7 @@ class AppBarComponent extends Component {
             { name: 'Solution', id: 'solution', current: false },
             { name: 'L\'équipe', id: 'team', current: false },
             { name: 'Acteurs', id: 'actors', current: false },
-            { name: 'Contact', id: 'actors', current: false },
+            { name: 'Contact', id: 'contact', current: false },
         ]
     }
 
@@ -28,6 +28,14 @@ class AppBarComponent extends Component {
             behavior: 'smooth',
             block: 'start',
         });
+
+        console.log(document.getElementById('scrollDiv').scrollTop);
+        console.log(document.getElementById('hgloves').offsetTop);
+        console.log(document.getElementById('problematic').offsetTop);
+        console.log(document.getElementById('solution').offsetTop);
+        console.log(document.getElementById('team').offsetTop);
+        console.log(document.getElementById('actors').offsetTop);
+        console.log(document.getElementById('hgloves').offsetTop);
 
         let tmp = [...tabs];
 

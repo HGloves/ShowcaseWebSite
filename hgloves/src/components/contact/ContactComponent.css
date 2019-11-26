@@ -1,0 +1,73 @@
+.ContactComponentContainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.ContactComponentContentContainer {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ContactComponentImageContainer {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    /* background-image: url('../../ressources/logo/socialNetwork.jpg');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat; */
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactComponentImage {
+    display: flex;
+    width: 70%;
+    height: 70%;
+    position: relative;
+}
+
+.ContactComponentDots {
+    position: absolute;
+    top: -50px;
+    left: -60px;
+}
+
+.ContactComponentSNContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 30%;
+}
+
+.ContactComponentSNImage {
+    width: 10%;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.ContactComponentSNImage:hover {
+    animation: 0.4s ease-out 0s 1 snAnimation;
+}
+
+@keyframes snAnimation {
+    0% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        /* color: #1abafe; */
+        transform: rotate(0deg);
+    }
+}

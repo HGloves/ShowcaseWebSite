@@ -1,10 +1,13 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
+import VALENTIN_HAUY from '../../ressources/logo/ValentinHauy.png';
+import CHRISTOPHE_BONNEL from '../../ressources/logo/ChristopheBonnel.png';
+import FREDERIC_PEYSON from '../../ressources/logo/FredericPeyson.png';
 
 const Actors = [
     {
         name: 'Association Valentin Hauy',
-        icon: 'house',
+        image: VALENTIN_HAUY,
         subtitle: '',
         iconContent: () => {
             return (
@@ -21,7 +24,7 @@ const Actors = [
     },
     {
         name: 'Christophe Bonnel',
-        icon: 'person',
+        image: CHRISTOPHE_BONNEL,
         subtitle: 'Docteur et novateur dans le milieu médical',
         iconContent: () => {
             return (
@@ -34,7 +37,7 @@ const Actors = [
     },
     {
         name: 'Association Frederic Peyson',
-        icon: 'house',
+        image: FREDERIC_PEYSON,
         subtitle: '',
         iconContent: () => {
             return (

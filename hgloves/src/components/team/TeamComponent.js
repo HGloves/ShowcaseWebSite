@@ -23,7 +23,7 @@ class TeamComponent extends Component {
 
     componentDidMount() {
         let intervalId = setInterval(this.swapActiveItemIndex, 3000);
-        this.setState({intervalId: intervalId});
+        this.setState({ intervalId: intervalId });
     }
 
     componentWillUnmount() {
@@ -80,6 +80,7 @@ class TeamComponent extends Component {
                             return (
                                 <div key={key} className='TeamCarouselCardContainer'>
                                     <div key={key} className='TeamCarouselImageContainer'>
+                                        <img alt='dots' src={member.dots} className='TeamCarouselDots' />
                                         <img alt='Profile' src={member.pic} className='TeamCarouselImage' />
                                     </div>
                                     <div className='TeamCarouselContentContainer'>
@@ -97,7 +98,7 @@ class TeamComponent extends Component {
                                                         onMouseOver={() => this.handeSocialNetworkOver(key, keyN, true)}
                                                         onMouseOut={() => this.handeSocialNetworkOver(key, keyN, false)}
                                                         onClick={() => window.open(socialNetwork.link, "_blank")}
-                                                        />
+                                                    />
                                                 );
                                             })}
                                         </div>

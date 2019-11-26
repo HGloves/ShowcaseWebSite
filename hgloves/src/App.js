@@ -11,7 +11,7 @@ import Router from './components/router/Router';
 
 function App() {
     return (
-        <div className="app">
+        <div className="app" id='scrollDiv'>
             <MuiThemeProvider theme={theme}>
                 <Switch>
                     <Router />
