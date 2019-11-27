@@ -7,9 +7,6 @@ import './SolutionMobileComponent.css'
 
 import IMAGE from '../../../ressources/dot/solution.png';
 
-//Images
-import HAND from '../../../ressources/logo/hand.png';
-
 class SolutionMobileComponent extends Component {
 
     render() {
