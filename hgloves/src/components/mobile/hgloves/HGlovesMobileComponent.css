@@ -1,0 +1,44 @@
+.HGlovesMobileComponentContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.HGlovesMobileContentContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.HGlovesMobileTextContainer {
+    display: flex;
+    width: 90%;
+    height: 70%;
+    margin: 5%;
+    flex-direction: column;
+}
+
+.HGlovesMobileImageContainer {
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.HGlovesMobileImage {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.HGlovesMobileComponentEnd {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    transform: rotate(3deg);
+    background-color: white;
+    margin-top: -30px;
+    margin-left: -10px;
+}

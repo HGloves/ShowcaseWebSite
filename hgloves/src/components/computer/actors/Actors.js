@@ -1,8 +1,8 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
-import VALENTIN_HAUY from '../../ressources/logo/ValentinHauy.png';
-import CHRISTOPHE_BONNEL from '../../ressources/logo/ChristopheBonnel.png';
-import FREDERIC_PEYSON from '../../ressources/logo/FredericPeyson.png';
+import VALENTIN_HAUY from '../../../ressources/logo/ValentinHauy.png';
+import CHRISTOPHE_BONNEL from '../../../ressources/logo/ChristopheBonnel.png';
+import FREDERIC_PEYSON from '../../../ressources/logo/FredericPeyson.png';
 
 const Actors = [
     {

@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import Typography from '@material-ui/core/Typography';
 
 //Style
-import './AppBarComponent.css';
+import './AppBarMobileComponent.css';
 
 //Images
-import LOGO from '../../ressources/logo/appBarLogo.png';
+import LOGO from '../../../ressources/logo/appBarLogo.png';
 
-class AppBarComponent extends Component {
+class AppBarMobileComponent extends Component {
 
     state = {
         tabs: [
@@ -43,19 +43,18 @@ class AppBarComponent extends Component {
         const { tabs } = this.state;
 
         return (
-            <div className="AppBarComponentContainer">
-                <div className='AppBarLogoContainer'>
-                    <img className='AppBarLogo' alt='logo' src={LOGO} />
+            <div className="AppBarMobileComponentContainer">
+                <div className='AppBarMobileLogoContainer'>
+                    <img className='AppBarMobileLogo' alt='logo' src={LOGO} />
                 </div>
-                <div className='AppBarTabContainer'>
+                <div className='AppBarMobileTabContainer'>
                     {tabs.map((tab, key) => {
                         return (
-                            <div key={key} className='appBarTabDiv'>
+                            <div key={key} className='AppBarMobileTabDiv'>
                                 <Typography
-                                    className='AppBarTab'
+                                    className='AppBarMobileTab'
                                     key={key}
-                                    style={{ fontWeight: 'bold' }}
-                                    variant='h6'
+                                    style={{ fontWeight: 'bold', fontSize: '2vw' }}
                                     color='primary'
                                     onClick={() => this.handleScroll(tab.id, key)}
                                 >
@@ -71,4 +70,4 @@ class AppBarComponent extends Component {
     }
 }
 
-export default AppBarComponent;
+export default AppBarMobileComponent;

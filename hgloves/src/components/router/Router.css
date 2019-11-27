@@ -1,12 +1,13 @@
 .RouterContainer {
     display: flex;
     width: 100%;
-    height: 100%;
     flex-direction: column;
 }
 
 .RouterContentContainer {
-    display: flex;
     width: 100%;
-    flex-direction: column;
+}
+
+.RouterMobileContentContainer {
+    width: 100%;
 }

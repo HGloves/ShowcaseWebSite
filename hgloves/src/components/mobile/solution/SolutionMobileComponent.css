@@ -1,0 +1,42 @@
+.SolutionMobileComponentContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+.SolutionMobileComponentContentContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    transform: rotate(-3deg);
+    position: relative;
+}
+
+.SolutionMobileComponentContent {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    transform: rotate(3deg);
+}
+
+.SolutionMobileComponentSide {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.SolutionMobileComponentLeftContainer {
+    display: flex;
+    width: 90%;
+    padding: 5%;
+    flex-direction: column;
+}
+
+.SolutionMobileComponentRightContainer {
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    height: auto;
+}

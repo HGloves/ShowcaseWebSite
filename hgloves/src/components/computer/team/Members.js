@@ -1,26 +1,26 @@
 //Images
-import Baudonnel from '../../ressources/members/CBaudonnel.jpg';
-import Monjo from '../../ressources/members/CMonjo.jpg';
-import Albiges from '../../ressources/members/NAlbiges.jpg';
-import Laget from '../../ressources/members/ALaget.jpg';
-import Cayrier from '../../ressources/members/BCayrier.jpg';
-import Lesueur from '../../ressources/members/LLesueur.jpg';
-import Rigal from '../../ressources/members/DRigal.jpg';
-import Chaptal from '../../ressources/members/CChaptal.jpg';
-import Codinach from '../../ressources/members/HCodinach.jpeg';
+import Baudonnel from '../../../ressources/members/CBaudonnel.jpg';
+import Monjo from '../../../ressources/members/CMonjo.jpg';
+import Albiges from '../../../ressources/members/NAlbiges.jpg';
+import Laget from '../../../ressources/members/ALaget.jpg';
+import Cayrier from '../../../ressources/members/BCayrier.jpg';
+import Lesueur from '../../../ressources/members/LLesueur.jpg';
+import Rigal from '../../../ressources/members/DRigal.jpg';
+import Chaptal from '../../../ressources/members/CChaptal.jpg';
+import Codinach from '../../../ressources/members/HCodinach.jpeg';
 
-import Facebook from '../../ressources/logo/facebook.png';
-import Linkedin from '../../ressources/logo/linkedin.png';
-import Github from '../../ressources/logo/github.png';
-import Instagram from '../../ressources/logo/instagram.png';
-import FacebookHover from '../../ressources/logo/facebookHover.png';
-import LinkedinHover from '../../ressources/logo/linkedinHover.png';
-import GithubHover from '../../ressources/logo/githubHover.png';
-import InstagramHover from '../../ressources/logo/instagramHover.png';
+import Facebook from '../../../ressources/logo/facebook.png';
+import Linkedin from '../../../ressources/logo/linkedin.png';
+import Github from '../../../ressources/logo/github.png';
+import Instagram from '../../../ressources/logo/instagram.png';
+import FacebookHover from '../../../ressources/logo/facebookHover.png';
+import LinkedinHover from '../../../ressources/logo/linkedinHover.png';
+import GithubHover from '../../../ressources/logo/githubHover.png';
+import InstagramHover from '../../../ressources/logo/instagramHover.png';
 
-import BLUE_SQUARE from '../../ressources/dot/blueSquare.png';
-import BROWN_SQUARE from '../../ressources/dot/brownSquare.png';
-import PINK_SQUARE from '../../ressources/dot/pinkSquare.png';
+import BLUE_SQUARE from '../../../ressources/dot/blueSquare.png';
+import BROWN_SQUARE from '../../../ressources/dot/brownSquare.png';
+import PINK_SQUARE from '../../../ressources/dot/pinkSquare.png';
 
 const Members = [
     {

@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 
 import Actors from './Actors';
 
-import CROSS_DOT from "../../ressources/dot/cross.png";
+import CROSS_DOT from "../../../ressources/dot/cross.png";
 
 //Style
 import './ActorsComponent.css'

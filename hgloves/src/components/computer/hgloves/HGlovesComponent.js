@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import Typography from '@material-ui/core/Typography';
 
-import IMAGE from '../../ressources/dot/brownLogo.png';
+import IMAGE from '../../../ressources/dot/brownLogo.png';
 
 //Style
 import './HGlovesComponent.css'

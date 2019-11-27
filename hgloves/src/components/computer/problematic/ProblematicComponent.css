@@ -38,7 +38,7 @@
     height: 90%;
     border-radius: 40px;
     margin-left: 40%;
-    background-image: url('../../ressources/dot/problematic.png');
+    background-image: url('../../../ressources/dot/problematic.png');
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 

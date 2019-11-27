@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import './SolutionComponent.css'
 
 //Images
-import HAND from '../../ressources/logo/hand.png';
+import HAND from '../../../ressources/logo/hand.png';
 
 class SolutionComponent extends Component {
 

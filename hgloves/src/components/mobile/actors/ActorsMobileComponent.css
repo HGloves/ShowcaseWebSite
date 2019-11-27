@@ -1,0 +1,91 @@
+.ActorsMobileComponentContainer {
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+}
+
+.ActorsMobileComponentBegin {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    transform: rotate(-2deg);
+    top: 15px;
+}
+
+.ActorsMobileComponentEnd {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    transform: rotate(-2deg);
+    bottom: -30px;
+}
+
+.ActorsMobileComponentLeft {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    left: 0px;
+}
+
+.ActorsMobileComponentContentContainer {
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(to right, #f0f2ff, #faeffa, #ffedf1, #ffede7, #f8efe2);
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.ActorsMobileComponentCardContainer {
+    display: flex;
+    width: 90%;
+    padding: 5%;
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    position: relative;
+    z-index: 1;
+}
+
+.ActorsMobileComponentCardContentContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    z-index: 1;
+}
+
+.ActorsMobileComponentCardDots {
+    position: absolute;
+    top: -68px;
+    left: -60px;
+}
+
+.ActorsMobileComponentCardContent {
+    display: flex;
+    width: 74%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.ActorsMobileComponentCardButton {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: -0.9vw;
+    cursor: pointer;
+}

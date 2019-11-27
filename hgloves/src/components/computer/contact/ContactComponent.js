@@ -2,15 +2,15 @@
 import React, { Component } from 'react';
 import Typography from '@material-ui/core/Typography';
 
-import BG from '../../ressources/logo/socialNetwork.jpg';
-import DOTS from '../../ressources/dot/cross.png';
+import BG from '../../../ressources/logo/socialNetwork.jpg';
+import DOTS from '../../../ressources/dot/cross.png';
 
 //Style
 import './ContactComponent.css'
 
-import FACEBOOK from '../../ressources/logo/facebookOutlined.png';
-import TWITTER from '../../ressources/logo/twitterOutlined.png';
-import INSTAGRAM from '../../ressources/logo/instagramOutlined.png';
+import FACEBOOK from '../../../ressources/logo/facebookOutlined.png';
+import TWITTER from '../../../ressources/logo/twitterOutlined.png';
+import INSTAGRAM from '../../../ressources/logo/instagramOutlined.png';
 
 //Images
 
