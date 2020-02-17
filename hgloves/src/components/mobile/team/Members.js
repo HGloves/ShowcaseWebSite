@@ -2,12 +2,12 @@
 import Baudonnel from '../../../ressources/members/CBaudonnel.jpg';
 import Monjo from '../../../ressources/members/CMonjo.jpg';
 import Albiges from '../../../ressources/members/NAlbiges.jpg';
-import Laget from '../../../ressources/members/ALaget.jpg';
+import Laget from '../../../ressources/members/ALaget.JPG';
 import Cayrier from '../../../ressources/members/BCayrier.jpg';
 import Lesueur from '../../../ressources/members/LLesueur.jpg';
 import Rigal from '../../../ressources/members/DRigal.jpg';
 import Chaptal from '../../../ressources/members/CChaptal.jpg';
-import Codinach from '../../../ressources/members/HCodinach.jpeg';
+import Codinach from '../../../ressources/members/HCodinach.jpg';
 
 import Facebook from '../../../ressources/logo/facebook.png';
 import Linkedin from '../../../ressources/logo/linkedin.png';
