@@ -21,7 +21,7 @@ const typoStyle = {
 };
 
 const socialNetworkd = [
-    { image: FACEBOOK, link: 'https://www.facebook.com/HGloves/' },
+    { image: FACEBOOK, link: 'https://www.facebook.com/HGlovesFTC/' },
     { image: TWITTER, link: 'https://twitter.com/HGlovesFTC' },
     { image: INSTAGRAM, link: 'https://www.instagram.com/hglovesftc/' },
 ];
