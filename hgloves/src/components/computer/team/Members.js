@@ -32,18 +32,21 @@ const Members = [
         dots: BLUE_SQUARE,
         networks: [
             {
+                alt: "Linkedin",
                 normal: Linkedin,
                 hover: LinkedinHover,
                 hoverStatus: false,
                 link: 'https://www.linkedin.com/in/baudonnel-clement/'
             },
             {
+                alt: "Facebook",
                 normal: Facebook,
                 hover: FacebookHover,
                 hoverStatus: false,
                 link: 'https://www.facebook.com/profile.php?id=100009867942790'
             },
             {
+                alt: "GitHub",
                 normal: Github,
                 hover: GithubHover,
                 hoverStatus: false,
@@ -60,24 +63,28 @@ const Members = [
         dots: PINK_SQUARE,
         networks: [
             {
+                alt: "Linkedin",
                 normal: Linkedin,
                 hover: LinkedinHover,
                 hoverStatus: false,
                 link: 'https://www.linkedin.com/in/camille-monjo/'
             },
             {
+                alt: "Facebook",
                 normal: Facebook,
                 hover: FacebookHover,
                 hoverStatus: false,
                 link: 'https://www.facebook.com/camille.monjo'
             },
             {
+                alt: "GitHub",
                 normal: Github,
                 hover: GithubHover,
                 hoverStatus: false,
                 link: 'https://github.com/CMonjo'
             },
             {
+                alt: "Instagram",
                 normal: Instagram,
                 hover: InstagramHover,
                 hoverStatus: false,
@@ -93,18 +100,21 @@ const Members = [
         dots: PINK_SQUARE,
         networks: [
             {
+                alt: "Linkedin",
                 normal: Linkedin,
                 hover: LinkedinHover,
                 hoverStatus: false,
                 link: 'https://www.linkedin.com/in/nicolas-albiges/'
             },
             {
+                alt: "Facebook",
                 normal: Facebook,
                 hover: FacebookHover,
                 hoverStatus: false,
                 link: 'https://www.facebook.com/nicolas.albiges'
             },
             {
+                alt: "GitHub",
                 normal: Github,
                 hover: GithubHover,
                 hoverStatus: false,
@@ -117,22 +127,25 @@ const Members = [
         name: 'Antoine Laget',
         birthDate: '1998-03-10',
         pic: Laget,
-        pole: 'Pôle simulation',
+        pole: 'Développeur hardware',
         dots: BROWN_SQUARE,
         networks: [
             {
+                alt: "Linkedin",
                 normal: Linkedin,
                 hover: LinkedinHover,
                 hoverStatus: false,
                 link: 'https://www.linkedin.com/in/antoine-laget-007b2b177/'
             },
             {
+                alt: "Facebook",
                 normal: Facebook,
                 hover: FacebookHover,
                 hoverStatus: false,
                 link: 'https://www.facebook.com/antoine.laget'
             },
             {
+                alt: "GitHub",
                 normal: Github,
                 hover: GithubHover,
                 hoverStatus: false,
@@ -145,22 +158,25 @@ const Members = [
         name: 'Baptiste Cayrier',
         birthDate: '1999-04-22',
         pic: Cayrier,
-        pole: 'Pôle simulation',
+        pole: 'Développeur hardware',
         dots: BROWN_SQUARE,
         networks: [
             {
+                alt: "Linkedin",
                 normal: Linkedin,
                 hover: LinkedinHover,
                 hoverStatus: false,
                 link: 'https://www.linkedin.com/in/baptiste-cayrier-0b0760152/'
             },
             {
+                alt: "Facebook",
                 normal: Facebook,
                 hover: FacebookHover,
                 hoverStatus: false,
                 link: 'https://www.facebook.com/batyste.cayrier'
             },
             {
+                alt: "GitHub",
                 normal: Github,
                 hover: GithubHover,
                 hoverStatus: false,
@@ -177,12 +193,14 @@ const Members = [
         dots: BLUE_SQUARE,
         networks: [
             {
+                alt: "Linkedin",
                 normal: Linkedin,
                 hover: LinkedinHover,
                 hoverStatus: false,
                 link: 'https://www.linkedin.com/in/lilian-lesueur-9b10a4167/'
             },
             {
+                alt: "Facebook",
                 normal: Facebook,
                 hover: FacebookHover,
                 hoverStatus: false,
@@ -199,18 +217,21 @@ const Members = [
         dots: BLUE_SQUARE,
         networks: [
             {
+                alt: "Linkedin",
                 normal: Linkedin,
                 hover: LinkedinHover,
                 hoverStatus: false,
                 link: 'https://www.linkedin.com/in/dorian-rigal-901947158/'
             },
             {
+                alt: "Facebook",
                 normal: Facebook,
                 hover: FacebookHover,
                 hoverStatus: false,
                 link: 'https://www.facebook.com/toad.bill?ref=br_rs'
             },
             {
+                alt: "GitHub",
                 normal: Github,
                 hover: GithubHover,
                 hoverStatus: false,
@@ -223,22 +244,25 @@ const Members = [
         name: 'Clément Chaptal',
         birthDate: '1999-02-11',
         pic: Chaptal,
-        pole: 'Pôle simulation',
+        pole: 'Développeur hardware',
         dots: BROWN_SQUARE,
         networks: [
             {
+                alt: "Linkedin",
                 normal: Linkedin,
                 hover: LinkedinHover,
                 hoverStatus: false,
                 link: 'https://www.linkedin.com/in/cl%C3%A9ment-chaptal-13bb13161/'
             },
             {
+                alt: "Facebook",
                 normal: Facebook,
                 hover: FacebookHover,
                 hoverStatus: false,
                 link: 'https://www.facebook.com/profile.php?id=100006788836075'
             },
             {
+                alt: "GitHub",
                 normal: Github,
                 hover: GithubHover,
                 hoverStatus: false,
@@ -255,18 +279,21 @@ const Members = [
         dots: PINK_SQUARE,
         networks: [
             {
+                alt: "Linkedin",
                 normal: Linkedin,
                 hover: LinkedinHover,
                 hoverStatus: false,
                 link: 'https://www.linkedin.com/in/hugo-codinach/'
             },
             {
+                alt: "Facebook",
                 normal: Facebook,
                 hover: FacebookHover,
                 hoverStatus: false,
                 link: 'https://www.facebook.com/hugo.codinach.3'
             },
             {
+                alt: "GitHub",
                 normal: Github,
                 hover: GithubHover,
                 hoverStatus: false,

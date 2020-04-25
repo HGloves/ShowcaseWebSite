@@ -80,8 +80,8 @@ class TeamComponent extends Component {
                             return (
                                 <div key={key} className='TeamCarouselCardContainer'>
                                     <div key={key} className='TeamCarouselImageContainer'>
-                                        <img alt='dots' src={member.dots} className='TeamCarouselDots' />
-                                        <img alt='Profile' src={member.pic} className='TeamCarouselImage' />
+                                        <img alt="Cadre" src={member.dots} className='TeamCarouselDots' />
+                                        <img alt={"Photo de " + member.alt} src={member.pic} className='TeamCarouselImage' />
                                     </div>
                                     <div className='TeamCarouselContentContainer'>
                                         <Typography variant='h3' color='primary' style={{ fontWeight: 'bold' }}>{member.name}</Typography>
@@ -92,7 +92,7 @@ class TeamComponent extends Component {
                                                 return (
                                                     <img
                                                         className='TeamCarouselSocialNetwork'
-                                                        alt='logo'
+                                                        alt={'Logo et lien de ' + socialNetwork.alt}
                                                         key={keyN}
                                                         src={socialNetwork.hoverStatus ? socialNetwork.hover : socialNetwork.normal}
                                                         onMouseOver={() => this.handeSocialNetworkOver(key, keyN, true)}

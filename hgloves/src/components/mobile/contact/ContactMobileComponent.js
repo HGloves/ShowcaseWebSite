@@ -21,9 +21,9 @@ const typoStyle = {
 };
 
 const socialNetworkd = [
-    { image: FACEBOOK, link: 'https://www.facebook.com/HGlovesFTC/' },
-    { image: TWITTER, link: 'https://twitter.com/HGlovesFTC' },
-    { image: INSTAGRAM, link: 'https://www.instagram.com/hglovesftc/' },
+    { name: "Facebook", image: FACEBOOK, link: 'https://www.facebook.com/HGlovesFTC/' },
+    { name: "Twitter", image: TWITTER, link: 'https://twitter.com/HGlovesFTC' },
+    { name: "Instagram", image: INSTAGRAM, link: 'https://www.instagram.com/hglovesftc/' },
 ];
 
 class ContactMobileComponent extends Component {
@@ -37,7 +37,7 @@ class ContactMobileComponent extends Component {
                         {socialNetworkd.map((value, key) => {
                             return (
                                 <img
-                                alt='logo'
+                                alt={"Logo de " + value.name}
                                 src={value.image}
                                 key={key}
                                 className='ContactMobileComponentSNImage'

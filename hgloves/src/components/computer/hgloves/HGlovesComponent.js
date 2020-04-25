@@ -19,7 +19,7 @@ class HGlovesComponent extends Component {
                         <Typography variant='h5' color='primary' style={{ marginTop: 10 }}>Le projet HGloves se matérialise par un gant et un boitier, porté par une personne atteinte de surdicécité.</Typography>
                     </div>
                     <div className='HGlovesImageContainer'>
-                        <img className='HGlovesImage' alt='LOGO' src={IMAGE} />
+                        <img className='HGlovesImage' alt='Logo du projet étudiant HGloves' src={IMAGE} />
                     </div>
                 </div>
                 <div className='HGlovesComponentEnd' />

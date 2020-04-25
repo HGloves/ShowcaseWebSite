@@ -80,7 +80,7 @@ class TeamMobileComponent extends Component {
                             return (
                                 <div key={key} className='TeamMobileCarouselCardContainer'>
                                     <div key={key} className='TeamMobileCarouselImageContainer'>
-                                        <img alt='Profile' src={member.pic} className='TeamMobileCarouselImage' />
+                                        <img alt={"Photo de " + member.alt} src={member.pic} className='TeamMobileCarouselImage' />
                                     </div>
                                     <div className='TeamMobileCarouselContentContainer'>
                                         <div className='TeamMobileCarouselContentInfoContainer'>
@@ -93,7 +93,7 @@ class TeamMobileComponent extends Component {
                                                 return (
                                                     <img
                                                         className='TeamMobileCarouselSocialNetwork'
-                                                        alt='logo'
+                                                        alt={'Logo et lien de ' + socialNetwork.alt}
                                                         key={keyN}
                                                         src={socialNetwork.hoverStatus ? socialNetwork.hover : socialNetwork.normal}
                                                         onMouseOver={() => this.handeSocialNetworkOver(key, keyN, true)}

@@ -24,9 +24,9 @@ const typoStyle = {
 };
 
 const socialNetworkd = [
-    { image: FACEBOOK, link: 'https://www.facebook.com/HGlovesFTC/' },
-    { image: TWITTER, link: 'https://twitter.com/HGlovesFTC' },
-    { image: INSTAGRAM, link: 'https://www.instagram.com/hglovesftc/' },
+    { name: "Facebook", image: FACEBOOK, link: 'https://www.facebook.com/HGlovesFTC/' },
+    { name: "Twitter", image: TWITTER, link: 'https://twitter.com/HGlovesFTC' },
+    { name: "Instagram", image: INSTAGRAM, link: 'https://www.instagram.com/hglovesftc/' },
 ];
 
 class ContactComponent extends Component {
@@ -40,7 +40,7 @@ class ContactComponent extends Component {
                         {socialNetworkd.map((value, key) => {
                             return (
                                 <img
-                                alt='logo'
+                                alt={"Logo de " + value.name}
                                 src={value.image}
                                 key={key}
                                 className='ContactComponentSNImage'
@@ -51,8 +51,8 @@ class ContactComponent extends Component {
                 </div>
                 <div className='ContactComponentImageContainer'>
                     <div className='ContactComponentImage'>
-                        <img alt='dots' src={DOTS} className='ContactComponentDots' />
-                        <img alt='bg' src={BG} style={{ width: '100%', zIndex: 1 }} />
+                        <img alt="Cadre" src={DOTS} className='ContactComponentDots' />
+                        <img alt='Representation des différents contact sur lesquels nous sommes disponible' src={BG} style={{ width: '100%', zIndex: 1 }} />
                     </div>
                 </div>
             </div>

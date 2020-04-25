@@ -17,7 +17,7 @@ class ProblematicComponent extends Component {
                 </div>
                 <div className='ProblematicContentContainer'>
                     <div className='ProblematicSideContainer'>
-                        <div className='ProblematicImageContainer' />
+                        <div className='ProblematicImageContainer' alt="Deux personnes souffrant d'une déficience visuelle"/>
                     </div>
                     <div className='ProblematicSideContainer'>
                         <div className='ProblematicTextContainer'>

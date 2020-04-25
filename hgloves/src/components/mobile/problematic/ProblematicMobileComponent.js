@@ -27,7 +27,7 @@ class ProblematicMobileComponent extends Component {
                         </div>
                     </div>
                     <div className='ProblematicMobileSideContainer'>
-                        <img alt='problematic' src={IMAGE} className='ProblematicMobileImageContainer' />
+                        <img alt="Deux personnes souffrant d'une déficience visuelle" src={IMAGE} className='ProblematicMobileImageContainer' />
                     </div>
                 </div>
             </div>

@@ -21,11 +21,11 @@ class ActorsComponent extends Component {
                         return (
                             <div key={key} className='ActorsComponentCardContainer'>
                                 {key === 0 ?
-                                    <img alt='cross_dot' src={CROSS_DOT} className='ActorsComponentCardDots' />
+                                    <img alt="Cadre" src={CROSS_DOT} className='ActorsComponentCardDots' />
                                     : null}
                                 <div key={key} className='ActorsComponentCardContentContainer'>
                                     <div key={key} className='ActorsComponentCardContent'>
-                                        <img alt='logo' src={actor.image} />
+                                        <img alt={'Logo de ' + actor.name} src={actor.image} />
                                         <Typography variant='h5' color='primary' style={{ fontWeight: 'bold' }}>{actor.name}</Typography>
                                         <Typography variant='subtitle1' color='primary'>{actor.subtitle}</Typography>
                                     </div>
