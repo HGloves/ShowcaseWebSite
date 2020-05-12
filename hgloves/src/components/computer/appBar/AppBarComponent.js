@@ -18,6 +18,7 @@ class AppBarComponent extends Component {
             { name: 'L\'équipe', id: 'team', current: false },
             { name: 'Acteurs', id: 'actors', current: false },
             { name: 'Contact', id: 'contact', current: false },
+            { name: 'News', id: 'blog', current: false },
         ]
     }
 

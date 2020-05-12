@@ -1,0 +1,42 @@
+.BlogMobileComponentContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+.BlogMobileComponentContentContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    transform: rotate(-3deg);
+    position: relative;
+}
+
+.BlogMobileComponentContent {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    transform: rotate(3deg);
+}
+
+.BlogMobileComponentSide {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.BlogMobileComponentLeftContainer {
+    display: flex;
+    width: 90%;
+    padding: 5%;
+    flex-direction: column;
+}
+
+.BlogMobileComponentRightContainer {
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    height: auto;
+}

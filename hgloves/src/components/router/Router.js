@@ -10,6 +10,7 @@ import SolutionComponent from '../computer/solution/SolutionComponent';
 import TeamComponent from '../computer/team/TeamComponent';
 import ActorsComponent from '../computer/actors/ActorsComponent';
 import ContactComponent from '../computer/contact/ContactComponent';
+import BlogComponent from "../computer/Blog/BlogComponent";
 
 import AppBarMobileComponent from '../mobile/appBar/AppBarMobileComponent';
 import HGlovesMobileComponent from '../mobile/hgloves/HGlovesMobileComponent';
@@ -18,6 +19,7 @@ import SolutionMobileComponent from '../mobile/solution/SolutionMobileComponent'
 import TeamMobileComponent from '../mobile/team/TeamMobileComponent';
 import ActorsMobileComponent from '../mobile/actors/ActorsMobileComponent';
 import ContactMobileComponent from '../mobile/contact/ContactMobileComponent';
+import BlogMobileComponent from "../mobile/Blog/BlogMobileComponent";
 
 
 
@@ -37,6 +39,7 @@ class Router extends Component {
                         <TeamMobileComponent />
                         <ActorsMobileComponent />
                         <ContactMobileComponent />
+                        <BlogMobileComponent />
                     </div>
                 </div>
             )
@@ -50,6 +53,7 @@ class Router extends Component {
                     <TeamComponent />
                     <ActorsComponent />
                     <ContactComponent />
+                    <BlogComponent />
                 </div>
             </div>
         );
