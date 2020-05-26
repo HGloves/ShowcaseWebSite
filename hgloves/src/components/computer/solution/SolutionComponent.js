@@ -14,7 +14,7 @@ class SolutionComponent extends Component {
         return (
             <div className="SolutionComponentContainer" id='solution'>
                 <div className='SolutionComponentContentContainer'>
-                    <img alt='hand' src={HAND} className='SolutionComponentHand'/>
+                    <img alt="Logo du projet étudiant HGloves" src={HAND} className='SolutionComponentHand'/>
                     <div className='SolutionComponentContent'>
                         <div className='SolutionComponentSide'>
                             <div className='SolutionComponentLeftContainer'>
@@ -23,7 +23,7 @@ class SolutionComponent extends Component {
                                 <Typography variant='subtitle1' color='primary'>Notre solution propose ainsi quelque chose de novateur et offrant à son utilisateur une communication dans les deux sens. Et cela avec n'importe qui.</Typography>
                             </div>
                         </div>
-                        <div className='SolutionComponentRightContainer' />
+                        <div className='SolutionComponentRightContainer' alt="Prototype d'un gant permettant de retranscrire le Lorm" />
                     </div>
                 </div>
             </div>

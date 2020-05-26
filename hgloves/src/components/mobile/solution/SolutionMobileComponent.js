@@ -12,7 +12,7 @@ class SolutionMobileComponent extends Component {
     render() {
         return (
             <div className="SolutionMobileComponentContainer" id='solution'>
-                <div className='SolutionMobileComponentContentContainer'>
+                <div className='SolutionMobileComponentContentContainer' alt="Logo du projet étudiant HGloves">
                     <div className='SolutionMobileComponentContent'>
                         <div className='SolutionMobileComponentSide'>
                             <div className='SolutionMobileComponentLeftContainer'>
@@ -21,7 +21,7 @@ class SolutionMobileComponent extends Component {
                                 <Typography variant='subtitle1' color='primary'>Notre solution propose ainsi quelque chose de novateur et offrant à son utilisateur une communication dans les deux sens. Et cela avec n'importe qui.</Typography>
                             </div>
                         </div>
-                        <img alt='solution' src={IMAGE} className='SolutionMobileComponentRightContainer' />
+                        <img alt="Prototype d'un gant permettant de retranscrire le Lorm" src={IMAGE} className='SolutionMobileComponentRightContainer' />
                     </div>
                 </div>
             </div>

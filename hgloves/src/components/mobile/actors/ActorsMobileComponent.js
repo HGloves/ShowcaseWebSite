@@ -18,7 +18,7 @@ class ActorsMobileComponent extends Component {
                             <div key={key} className='ActorsMobileComponentCardContainer'>
                                 <div key={key} className='ActorsMobileComponentCardContentContainer'>
                                     <div key={key} className='ActorsMobileComponentCardContent'>
-                                        <img alt='logo' src={actor.image} />
+                                        <img alt={'Logo de ' + actor.name} src={actor.image} />
                                         <Typography variant='h5' color='primary' style={{ fontWeight: 'bold' }}>{actor.name}</Typography>
                                         <Typography variant='subtitle1' color='primary' style={{ marginBottom: 10 }}>{actor.subtitle}</Typography>
                                     </div>

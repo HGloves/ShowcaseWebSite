@@ -19,7 +19,7 @@ class HGlovesMobileComponent extends Component {
                         <Typography variant='subtitle2' color='primary' style={{ marginTop: 10 }}>Le projet HGloves se matérialise par un gant et un boitier, porté par une personne atteinte de surdicécité.</Typography>
                     </div>
                     <div className='HGlovesMobileImageContainer'>
-                        <img className='HGlovesMobileImage' alt='LOGO' src={IMAGE} />
+                        <img className='HGlovesMobileImage' alt='Logo du projet étudiant HGloves' src={IMAGE} />
                     </div>
                 </div>
             </div>
