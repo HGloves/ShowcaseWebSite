@@ -10,6 +10,7 @@ import SolutionComponent from '../computer/solution/SolutionComponent';
 import TeamComponent from '../computer/team/TeamComponent';
 import ActorsComponent from '../computer/actors/ActorsComponent';
 import ContactComponent from '../computer/contact/ContactComponent';
+import EmailComponent from '../computer/email/email';
 import BlogComponent from "../computer/Blog/BlogComponent";
 
 import AppBarMobileComponent from '../mobile/appBar/AppBarMobileComponent';
@@ -54,6 +55,7 @@ class Router extends Component {
                     <ActorsComponent />
                     <ContactComponent />
                     <BlogComponent />
+		    <EmailComponent />
                 </div>
             </div>
         );
