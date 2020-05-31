@@ -64,3 +64,5 @@ cypress
 
 #Package
 package-lock.json
+
+.idea
