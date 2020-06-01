@@ -80,7 +80,6 @@ class EmailComponent extends Component {
 			body : encodeFormData(formData),
 		}).then((response) => {
 			if (response.ok) {
-				console.log("RESPONSE OK")
 				response.json()
 				this.clearForm();
 				this.setState({
@@ -106,16 +105,12 @@ class EmailComponent extends Component {
 						error: true,
 					},
 				})
-				console.log("RESPONSE BAD")
 			}})
 			.then((responseData) => {
-				console.log(responseData);
-				console.log(responseData.response);
 				return responseData;
 			}).catch(function(error) {
 				console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
 			});
-		console.log(resp);
 	}
 
 	_onBoldClick = () => {
