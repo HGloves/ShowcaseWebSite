@@ -20,6 +20,7 @@ import SolutionMobileComponent from '../mobile/solution/SolutionMobileComponent'
 import TeamMobileComponent from '../mobile/team/TeamMobileComponent';
 import ActorsMobileComponent from '../mobile/actors/ActorsMobileComponent';
 import ContactMobileComponent from '../mobile/contact/ContactMobileComponent';
+import EmailMobileComponent from '../mobile/email/email';
 import BlogMobileComponent from "../mobile/Blog/BlogMobileComponent";
 
 
@@ -40,6 +41,7 @@ class Router extends Component {
                         <TeamMobileComponent />
                         <ActorsMobileComponent />
                         <ContactMobileComponent />
+                        <EmailMobileComponent />
                         <BlogMobileComponent />
                     </div>
                 </div>
@@ -54,8 +56,8 @@ class Router extends Component {
                     <TeamComponent />
                     <ActorsComponent />
                     <ContactComponent />
+                    <EmailComponent />
                     <BlogComponent />
-		    <EmailComponent />
                 </div>
             </div>
         );
