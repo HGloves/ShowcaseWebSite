@@ -55,6 +55,9 @@ class EmailComponent extends Component {
 	}
 
 	sendMail = () => {
+		this.setState({
+			isEmailable: false
+		});
 		var formData = {
 			from : this.state.emailAdress,
 			subject: this.state.mailObject,
@@ -75,7 +78,44 @@ class EmailComponent extends Component {
 				'Access-Control-Allow-Methods': 'GET, POST, PUT, OPTIONS'
 			},
 			body : encodeFormData(formData),
-		})
+		}).then((response) => {
+			if (response.ok) {
+				console.log("RESPONSE OK")
+				response.json()
+				this.clearForm();
+				this.setState({
+					isEmailable: true,
+					snackbarParam: {
+						open: true,
+						vertical: 'bottom',
+						horizontal: 'center',
+						severity: 'success',
+						content: 'Email envoyé !',
+						error: true,
+					},
+				})
+			} else {
+				this.setState({
+					isEmailable: true,
+					snackbarParam: {
+						open: true,
+						vertical: 'bottom',
+						horizontal: 'center',
+						severity: 'error',
+						content: 'Erreur dans l\'envoie du mail !',
+						error: true,
+					},
+				})
+				console.log("RESPONSE BAD")
+			}})
+			.then((responseData) => {
+				console.log(responseData);
+				console.log(responseData.response);
+				return responseData;
+			}).catch(function(error) {
+				console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
+			});
+		console.log(resp);
 	}
 
 	_onBoldClick = () => {
@@ -135,7 +175,7 @@ class EmailComponent extends Component {
 	}
 
 	isMailFormValid = () => {
-		return this.isEmailValid() && this.isMailObjectValid() && this.isMailContentValid();
+		return this.isEmailValid() && this.isMailObjectValid() && this.isMailContentValid() && this.state.isMailAble;
 	}
 
 	clearForm = () => {
@@ -145,6 +185,24 @@ class EmailComponent extends Component {
 			emailAdress: '',
 		});
 	}
+
+
+	handleClose = (event, reason) => {
+		if (reason === 'clickaway') {
+			return;
+		}
+
+		this.setState({
+			snackbarParam: {
+				open: false,
+				vertical: 'bottom',
+				horizontal: 'center',
+				severity: 'success',
+				content: 'Error in mail',
+				error: true,
+			},
+		})
+	};
 
 
 	render() {
@@ -179,6 +237,11 @@ class EmailComponent extends Component {
 					<Button disabled={!this.isMailFormValid()} variant="contained" color="primary" onClick={this.sendMail}>
 						Envoyer
 					</Button>
+					<Snackbar open={snackbarParam.open} autoHideDuration={6000} onClose={this.handleClose}>
+						<Alert onClose={this.handleClose} severity={snackbarParam.severity}>
+							{snackbarParam.content}
+						</Alert>
+					</Snackbar>
 				</div>
 			</div>
 		)
