@@ -1,11 +1,10 @@
 .contactContainer {
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    padding-left: 5%;
-    padding-right: 5%;
+	display: flex;
+	width: 90%;
+	flex-direction: column;
+	padding-left: 5%;
+	padding-right: 5%;
 	margin-bottom: 30px;
-
 	margin-top: 20px;
 }
 

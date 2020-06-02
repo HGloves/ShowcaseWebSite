@@ -21,9 +21,6 @@ function Alert(props) {
 }
 
 class EmailMobileComponent extends Component {
-
-
-
 	state = {
 		editorState: EditorState.createEmpty(),
 		open: true,
@@ -58,7 +55,7 @@ class EmailMobileComponent extends Component {
 		this.setState({
 			isEmailable: false
 		});
-		var formData = {
+		const formData = {
 			from : this.state.emailAdress,
 			subject: this.state.mailObject,
 			html: this.editor.editor.innerHTML
@@ -113,24 +110,8 @@ class EmailMobileComponent extends Component {
 			});
 	}
 
-	_onBoldClick = () => {
-		this.editorHandle(RichUtils.toggleInlineStyle(this.state.editorState, 'BOLD'));
-	}
-
-	_onCodeClick = () => {
-		this.editorHandle(RichUtils.toggleInlineStyle(this.state.editorState, 'CODE'));
-	}
-
-	_onItalicClick = () => {
-		this.editorHandle(RichUtils.toggleInlineStyle(this.state.editorState, 'ITALIC'));
-	}
-
-	_onStrikeThroughClick = () => {
-		this.editorHandle(RichUtils.toggleInlineStyle(this.state.editorState, 'STRIKETHROUGH'));
-	}
-
-	_onUnderlineClick = () => {
-		this.editorHandle(RichUtils.toggleInlineStyle(this.state.editorState, 'UNDERLINE'));
+	_onEditorStyleClick = (editorType) => {
+		this.editorHandle(RichUtils.toggleInlineStyle(this.state.editorState, editorType));
 	}
 
 	handleMailObj = event => {
@@ -139,7 +120,7 @@ class EmailMobileComponent extends Component {
 		});
 	}
 
-	handleemailAdress = event => {
+	handleEmailAdress = event => {
 		this.setState({
 			emailAdress: event.target.value,
 		});
@@ -160,13 +141,13 @@ class EmailMobileComponent extends Component {
 	isMailObjectValid = () => {
 		const { mailObject } = this.state;
 
-		return mailObject.trim() != '';
+		return mailObject.trim() !== '';
 	}
 
 	isMailContentValid = () => {
 		const content = this.editor.editor.innerText;
 
-		return content.trim() != '';
+		return content.trim() !== '';
 	}
 
 	isMailFormValid = () => {
@@ -202,6 +183,7 @@ class EmailMobileComponent extends Component {
 
 	render() {
 		const { editorState, mailObject, emailAdress, snackbarParam } = this.state;
+		const list = ['CODE', 'ITALIC', 'STRIKETHROUGH', 'UNDERLINE', 'BOLD'];
 
 		return (
 			<div className="contactMobileContainer">
@@ -209,7 +191,7 @@ class EmailMobileComponent extends Component {
 					<TextField required label="Destinataire" value='hgloves.ftc@gmail.com' disabled fullWidth />
 				</div>
 				<div className="contactMobileHeaderTF">
-					<TextField required label="Votre Email" value={emailAdress} onChange={this.handleemailAdress} fullWidth />
+					<TextField required label="Votre Email" value={emailAdress} onChange={this.handleEmailAdress} fullWidth />
 				</div>
 				<div className="contactMobileHeaderTF">
 					<TextField required label="Objet" value={mailObject} onChange={this.handleMailObj} fullWidth />
@@ -222,11 +204,12 @@ class EmailMobileComponent extends Component {
 						ref={(element) => { this.editor = element; }} />
 				</div>
 				<div className="contactMobileToolBarContainer">
-					<div className="contactMobileTool" onClick={this._onCodeClick}><CodeIcon className="contactMobileToolIcon"/></div>
-					<div className="contactMobileTool" onClick={this._onItalicClick}><FormatItalicIcon className="contactMobileToolIcon" /></div>
-					<div className="contactMobileTool" onClick={this._onStrikeThroughClick}><StrikethroughSIcon className="contactMobileToolIcon" /></div>
-					<div className="contactMobileTool" onClick={this._onUnderlineClick}><FormatUnderlinedIcon className="contactMobileToolIcon" /></div>
-					<div className="contactMobileTool" onClick={this._onBoldClick}><FormatBoldIcon className="contactMobileToolIcon" /></div>
+					{
+						list.map((value, key) => {
+						return (
+						<div className="contactMobileTool" key={key} onClick={this._onEditorStyleClick(value)}><FormatItalicIcon className="contactMobileToolIcon" /></div>
+						)})
+					}
 				</div>
 				<div className="contactMobileSendButtonContainer">
 					<Button disabled={!this.isMailFormValid()} variant="contained" color="primary" onClick={this.sendMail}>

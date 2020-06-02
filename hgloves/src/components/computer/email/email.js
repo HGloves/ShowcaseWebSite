@@ -21,9 +21,6 @@ function Alert(props) {
 }
 
 class EmailComponent extends Component {
-
-
-
 	state = {
 		editorState: EditorState.createEmpty(),
 		open: true,
@@ -58,7 +55,7 @@ class EmailComponent extends Component {
 		this.setState({
 			isEmailable: false
 		});
-		var formData = {
+		const formData = {
 			from : this.state.emailAdress,
 			subject: this.state.mailObject,
 			html: this.editor.editor.innerHTML
@@ -139,7 +136,7 @@ class EmailComponent extends Component {
 		});
 	}
 
-	handleemailAdress = event => {
+	handleEmailAdress = event => {
 		this.setState({
 			emailAdress: event.target.value,
 		});
@@ -160,13 +157,13 @@ class EmailComponent extends Component {
 	isMailObjectValid = () => {
 		const { mailObject } = this.state;
 
-		return mailObject.trim() != '';
+		return mailObject.trim() !== '';
 	}
 
 	isMailContentValid = () => {
 		const content = this.editor.editor.innerText;
 
-		return content.trim() != '';
+		return content.trim() !== '';
 	}
 
 	isMailFormValid = () => {
@@ -209,7 +206,7 @@ class EmailComponent extends Component {
 					<TextField required label="Destinataire" value='hgloves.ftc@gmail.com' disabled fullWidth />
 				</div>
 				<div className="contactHeaderTF">
-					<TextField required label="Votre Email" value={emailAdress} onChange={this.handleemailAdress} fullWidth />
+					<TextField required label="Votre Email" value={emailAdress} onChange={this.handleEmailAdress} fullWidth />
 				</div>
 				<div className="contactHeaderTF">
 					<TextField required label="Objet" value={mailObject} onChange={this.handleMailObj} fullWidth />

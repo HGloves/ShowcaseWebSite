@@ -1,9 +1,9 @@
 require('dotenv').config()
-var express = require('express');
-var app = express();
-var cors = require('cors')
+const express = require('express');
+const app = express();
+const cors = require('cors')
 
-var ContactController = require('./contact/ContactController');
+const ContactController = require('./contact/ContactController');
 app.use(cors())
 app.use(ContactController);
 
