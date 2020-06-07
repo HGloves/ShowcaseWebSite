@@ -18,7 +18,7 @@ class BlogComponent extends Component {
                             <div className='BlogComponentLeftContainer'>
                                 <Typography variant='h3' color='primary' style={{ fontWeight: 'bold', marginBottom: '20px' }}>News</Typography>
                                 <Typography variant='subtitle1' color='primary' style={{ marginBottom: '20px' }}>Si vous souhaitez en apprendre plus sur notre projet HGLOVES vous pouvez rejoindre notre site de news.</Typography>
-                                <Button variant="contained" size="large" color="primary" onClick={() => window.open("hgloves.tk:3000", "_blank")}>Rejoindre</Button>
+                                <Button variant="contained" size="large" color="primary" onClick={() => window.open("http://hgloves.tk:3000", "_blank")}>Rejoindre</Button>
                             </div>
                         </div>
                         <div className="BlogComponentImageContainer">
