@@ -1,9 +1,16 @@
 version: "3"
 services:
-  hgloves:
-    restart: on-failure
-    image: service/hgloves
-    build: ./hgloves/
-    ports:
-      - "5023:80"
+    hgloves:
+        restart: on-failure
+        image: service/hgloves
+        build: ./hgloves/
+        ports:
+            - "5023:80"
+    back:
+        restart: on-failure
+        image: service/back
+        build: ./back/
+        ports:
+        - "3300:3300"
+
 
