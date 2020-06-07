@@ -66,7 +66,7 @@ class EmailMobileComponent extends Component {
 				.map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
 				.join('&');
 		};
-		fetch('http://localhost:3300/contact/mail/', {
+		fetch('http://hgloves.tk:3300/contact/mail/', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/x-www-form-urlencoded',
