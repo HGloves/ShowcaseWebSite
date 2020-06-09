@@ -20,16 +20,11 @@
     "server": "^1.0.27"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "CI=true react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "test:ci": "react-scripts test --env=jsdom -reporters ./node_modules/jest-junit --coverage --coverageDirectory=coverage --forceExit --detectOpenHandles --watchAll=false",
-    "test:cypress": "node_modules/.bin/cypress run",
-    "runtests:cypress": "npm run test:cypress --",
-    "coverage": "react-scripts test --env=jsdom --coverage",
+    "test": "start-server-and-test start http://localhost:3000/ cy:run",
     "eject": "react-scripts eject",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cy:run": "cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -50,29 +45,16 @@
     "@cypress/code-coverage": "^3.8.1",
     "@cypress/instrument-cra": "^1.1.1",
     "cypress": "^4.7.0",
-    "jest-junit": "^10.0.0"
+    "jest-junit": "^10.0.0",
+    "start-server-and-test": "^1.11.0"
   },
-  "jest": {
-    "collectCoverageFrom": [
-      "**/*.{ts,tsx}",
-      "!**/node_modules/**",
-      "!**/build/**",
-      "!**/definitionfiles/**",
-      "!**/WebWrokers/**",
-      "!**/*.mock.ts",
-      "!src/setupTests.ts"
+  "nyc": {
+    "include": [
+      "src/**/*.js"
     ],
-    "coverageReporters": [
-      "lcov",
-      "text"
-    ]
-  },
-  "jest-junit": {
-    "suiteName": "jest tests",
-    "output": "coverage/junit.xml",
-    "classNameTemplate": "{classname} - {title}",
-    "titleTemplate": "{classname} - {title}",
-    "ancestorSeparator": " > ",
-    "usePathForSuiteName": "true"
+    "exclude": [
+      "src/serviceWorker.js"
+    ],
+    "excludeAfterRemap": true
   }
 }
