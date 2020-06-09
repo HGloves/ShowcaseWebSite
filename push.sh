@@ -1,6 +1,6 @@
 #!/bin/bash
 
-npm --prefix news_front run test
+npm --prefix hgloves run test
 
 if [ $? -ne 0 ]; then
     echo "ERROR: PUSH CANCELED - TEST NOT PASSED" >&2
@@ -8,8 +8,8 @@ fi
 
 echo "SUCCESS: all test passed"
 
-echo "running 'cp news_front/coverage/lcov-report/index.html ./coverage.html"
-cp news_front/coverage/lcov-report/index.html ./coverage.html
+echo "running 'cp hgloves/coverage/lcov-report/index.html ./coverage.html"
+cp hgloves/coverage/lcov-report/index.html ./coverage.html
 if [ $? -ne 0 ]; then
     echo "ERROR: COPY ERROR" >&2
 fi
